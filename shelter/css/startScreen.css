@@ -8,100 +8,71 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
+    align-items: center;           /* ✅ ДОБАВИТЬ */
     max-width: 1200px;
     height: 60px;
-    position: static;
-    top: 30px;
-    left: 40px;
-    margin: 0 40px 0 40px;
+    margin: 0 auto;                /* ✅ ИЗМЕНИТЬ: было 0 40px 0 40px */
     padding-top: 30px;
 }
 
-.header .logo{
-    width: 184px;
-    height: 60px;
-}
-
-.header .logo .title{
-    width: 184px;
-    height: 35px;
+.header .logo .title {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 32px;
-    line-height: 110.00000000000001%;
-    letter-spacing: 6%;
-    vertical-align: middle;
+    line-height: 110%;
+    letter-spacing: 0.06em;        /* ✅ ИСПРАВИТЬ: было 6% */
     color: #F1CDB3;
     white-space: nowrap;
 }
 
-.header .logo .subtitle{
-    width: 179px;
-    height: 15px;
-    position: static;
-    top: 45px;
-    left: 4px;
+.header .logo .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 100%;
-    letter-spacing: 10%;
-    vertical-align: middle;
+    letter-spacing: 0.1em;         /* ✅ ИСПРАВИТЬ: было 10% */
     color: #ffffff;
     white-space: nowrap;
 }
 
-.menu{
-    margin: 16px 0 17px 0;
-}
-
-.menu ul{
+.menu ul {
     display: flex;
-    justify-content: space-between;
     gap: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    letter-spacing: 0%;
+    margin: 0;
+    padding: 0;
 }
 
-
-.menu ul li{
+.menu ul li {
     list-style: none;
-    
 }
 
-.menu ul li a{
-    display: flex;
-    justify-content: space-between;
-    gap: 35px;
+.menu ul li a {
     text-decoration: none;
     color: #CDCDCD;
     transition: color 0.3s ease;
 }
 
-.menu ul li:hover a{
+.menu ul li:hover a {
     color: #FAFAFA;
-    cursor: pointer;
 }
 
-.menu ul li:active a{
+.menu ul li:active a {
     border-bottom: 3px solid #F1CDB3;
     color: #FAFAFA;
-    transition: color 0.3s ease;
 }
 
 .start-screen-content {
     max-width: 1200px;
-    height: 728px;
-    margin: 90px auto 0 auto;
+    margin: 90px auto 0 auto;      /* ✅ УБРАТЬ height: 728px (он лишний) */
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
@@ -114,44 +85,29 @@
     max-width: 100%;
     height: auto;
     display: block;
-    
 }
 
-.content{
-    width: 460px;
-    height: 322px;
-    position: static;
-    top: 163px;
-}
-
-.content h2{
+.content h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    vertical-align: middle;
-    letter-spacing: 0%;
-    width: 310PX;
-    height: 114PX;
+    width: 310px;                  /* ✅ ИСПРАВИТЬ: было 310PX */
+    height: 114px;                 /* ✅ ИСПРАВИТЬ: было 114PX */
     color: #ffffff;
-    margin-bottom: 42PX;
+    margin-bottom: 42px;           /* ✅ ИСПРАВИТЬ: было 42PX */
 }
 
-.content p{
+.content p {
     font-family: Arial, Helvetica, sans-serif;
     width: 460px;
-    height: 72px;
-    position: static;
-    top: 156px;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    letter-spacing: 0%;
-    vertical-align: middle;
     color: #CDCDCD;
 }
 
-.button-primary{
+.button-primary {
     margin-top: 42px;
     padding: 15px 45px;
     border-radius: 100px;
@@ -159,25 +115,21 @@
     color: #292929;
     width: 207px;
     height: 52px;
-    gap: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
     font-weight: 400;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;        /* ✅ ИСПРАВИТЬ: было 6% */
     line-height: 130%;
     white-space: nowrap;
-    
-}
-
-.button-primary:hover{
-    background-color: #FDDCC4;
-    color: #292929;
+    border: none;                  /* ✅ ДОБАВИТЬ */
     cursor: pointer;
 }
 
-.button-primary:active{
+.button-primary:hover {
+    background-color: #FDDCC4;
+}
+
+.button-primary:active {
     background-color: #ffffff;
     border: 2px solid #F1CDB3;
-    color: #292929;
-    cursor: pointer;
 }
