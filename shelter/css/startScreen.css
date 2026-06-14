@@ -13,11 +13,15 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;           /* ✅ ДОБАВИТЬ */
+    align-items: center;
     max-width: 1200px;
     height: 60px;
-    margin: 0 auto;                /* ✅ ИЗМЕНИТЬ: было 0 40px 0 40px */
+    margin: 0 40px 0 40px;
     padding-top: 30px;
+}
+
+.header .logo a{
+    text-decoration: none;
 }
 
 .header .logo .title {
@@ -25,7 +29,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
-    letter-spacing: 0.06em;        /* ✅ ИСПРАВИТЬ: было 6% */
+    letter-spacing: 0.06em;
     color: #F1CDB3;
     white-space: nowrap;
 }
@@ -35,7 +39,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 100%;
-    letter-spacing: 0.1em;         /* ✅ ИСПРАВИТЬ: было 10% */
+    letter-spacing: 0.1em;
     color: #ffffff;
     white-space: nowrap;
 }
@@ -72,7 +76,7 @@
 
 .start-screen-content {
     max-width: 1200px;
-    margin: 90px auto 0 auto;      /* ✅ УБРАТЬ height: 728px (он лишний) */
+    margin: 90px auto 0 auto;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
@@ -92,10 +96,10 @@
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    width: 310px;                  /* ✅ ИСПРАВИТЬ: было 310PX */
-    height: 114px;                 /* ✅ ИСПРАВИТЬ: было 114PX */
+    width: 310px;
+    height: 114px;
     color: #ffffff;
-    margin-bottom: 42px;           /* ✅ ИСПРАВИТЬ: было 42PX */
+    margin-bottom: 42px;
 }
 
 .content p {
@@ -106,30 +110,33 @@
     line-height: 160%;
     color: #CDCDCD;
 }
+.start-screen-content .button-primary a{
+    text-decoration: none;
+    color: #292929;
+}
 
-.button-primary {
+.start-screen-content .button-primary {
     margin-top: 42px;
     padding: 15px 45px;
     border-radius: 100px;
     background-color: #F1CDB3;
-    color: #292929;
     width: 207px;
     height: 52px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
     font-weight: 400;
-    letter-spacing: 0.06em;        /* ✅ ИСПРАВИТЬ: было 6% */
+    letter-spacing: 0.06em;
     line-height: 130%;
     white-space: nowrap;
-    border: none;                  /* ✅ ДОБАВИТЬ */
+    border: none;
     cursor: pointer;
 }
 
-.button-primary:hover {
+.start-screen-content .button-primary:hover {
     background-color: #FDDCC4;
 }
 
-.button-primary:active {
+.start-screen-content .button-primary:active {
     background-color: #ffffff;
     border: 2px solid #F1CDB3;
 }

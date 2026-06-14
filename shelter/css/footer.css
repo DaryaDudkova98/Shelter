@@ -1,0 +1,140 @@
+.footer-content{
+    max-width: 1200px;
+    height: 310px;
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content .contacts{
+    width: 278px;
+    height: 234px;
+    padding-top: 16px;
+}
+
+.footer-content .contacts h3{
+    width: 278px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 6%;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+.footer-content .contacts .mail{
+    width: 251px;
+    height: 32px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-content .contacts .mail h4{
+    width: 191px;
+    height: 23px;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+    color: #F1CDB3;
+}
+
+.footer-content .contacts .phone{
+    width: 239;
+    height: 32;
+    display: flex;
+}
+
+.footer-content .contacts h4{
+    width: 179;
+    height: 23;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+    color: #F1CDB3;
+    margin-left: 20px;
+}
+
+.footer-content .contacts .mail img{
+    width: 40px;
+    height: 32px;
+}
+
+.footer-content .locations{
+    width: 278px;
+    height: 234px;
+    padding-top: 16px;
+    
+}
+
+.footer-content .locations h3{
+    width: 278px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 6%;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+.footer-content .locations .boston{
+    width: 302px;
+    height: 46px;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.footer-content .locations .boston h4{
+    width: 260px;
+    height: 46px;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+    color: #F1CDB3;
+    margin-left: 20px;
+}
+
+.footer-content .locations .boston img{
+    width: 22px;
+    height: 32px;
+}
+
+.footer-content .locations .london{
+    width: 302px;
+    height: 46px;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.footer-content .locations .london h4{
+    width: 260px;
+    height: 46px;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+    color: #F1CDB3;
+    margin-left: 20px;
+}
+
+.footer-content .locations .london img{
+    width: 22px;
+    height: 32px;
+}
+
+.footer-content .footer-puppy{
+    width: 300px;
+    height: 310px;
+}
