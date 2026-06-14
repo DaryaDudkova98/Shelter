@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelter - Our Pets</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/our-pets.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="our-pets-header">
+        <header class="header">
+          <div class="logo">
+            <a href="#" class="logo-link">
+              <p class="title">Cozy House</p>
+              <p class="subtitle">Shelter for pets in Boston</p>
+            </a>
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">About the shelter</a></li>
+              <li><a href="our-pets.html" class="active">Our pets</a></li>
+              <li><a href="#">Help the shelter</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div class="our-pets-content">
+        <h3>
+          Our friends who <br />
+          are looking for a house
+        </h3>
+        
+        <div class="pets-grid" id="petsGrid">
+        </div>
+
+        <div class="pagination">
+          <button class="pag-btn" id="firstPageBtn" disabled>&lt;&lt;</button>
+          <button class="pag-btn" id="prevPageBtn" disabled>&lt;</button>
+          <span class="page-number" id="pageNumber">1</span>
+          <button class="pag-btn" id="nextPageBtn">&gt;</button>
+          <button class="pag-btn" id="lastPageBtn">&gt;&gt;</button>
+        </div>
+      </div>
+
+      <footer class="footer" id="contacts">
+        <div class="footer-content">
+          <div class="contacts">
+            <h3>For questions <br> and suggestions</h3>
+            <div class="mail">
+              <a href="mailto:email@shelter.com" class="contact-link">
+                <img src="images/icon-email.svg" alt="mail-iconofy" />
+                <h4>email@shelter.com</h4>
+              </a>
+            </div>
+            <div class="phone">
+              <a href="tel:+136745677554" class="contact-link">
+                <img src="images/icon-phone.svg" alt="phone-iconofy" />
+                <h4>+13 674 567 75 54</h4>
+              </a>
+            </div>
+          </div>
+          <div class="locations">
+            <h3>We are waiting for your visit</h3>
+            <div class="boston">
+              <a href="https://maps.google.com/?q=1+Central+Street+Boston" target="_blank" class="location-link">
+                <img src="images/icon-marker.svg" alt="icon-maker" />
+                <h4>1 Central Street, Boston (entrance from the store)</h4>
+              </a>
+            </div>
+            <div class="london">
+              <a href="https://maps.google.com/?q=18+South+Park+London" target="_blank" class="location-link">
+                <img src="images/icon-marker.svg" alt="icon-maker" />
+                <h4>18 South Park, London</h4>
+              </a>
+            </div>
+          </div>
+          <img class="footer-puppy" src="images/footer-puppy.png" alt="puppy" />
+        </div>
+      </footer>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-window" style="width: 900px; height: 500px">
+        <button class="modal-close-btn">
+          <img src="images/close.png" alt="Close" />
+        </button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <img id="modalImg" class="modal-img" src="" alt="pet" />
+            <div class="modal-info">
+              <h3 id="modalName"></h3>
+              <h4 id="modalSubtitle">
+                <strong id="modalType"></strong> - <span id="modalBreed"></span>
+              </h4>
+              <h5 class="modal-description" id="modalDescription"></h5>
+              <ul class="modal-details" id="modalDetails">
+                <li class="list-item">
+                  <h5><strong>Age:</strong> <span id="modalAge"></span></h5>
+                </li>
+                <li class="list-item">
+                  <h5><strong>Inoculations:</strong> <span id="modalVaccinations"></span></h5>
+                </li>
+                <li class="list-item">
+                  <h5><strong>Diseases:</strong> <span id="modalDiseases"></span></h5>
+                </li>
+                <li class="list-item">
+                  <h5><strong>Parasites:</strong> <span id="modalParasites"></span></h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="our-pets.js"></script>
+  </body>
+</html>

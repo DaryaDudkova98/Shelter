@@ -1,0 +1,42 @@
+.main-container{
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about{
+    max-width: 1280px;
+    height: 588px;
+    position: static;
+    top: 908px;
+    background-color: #FFFFFF;
+}
+
+.pets{
+    max-width: 1280px;
+    height: 877px;
+    background-color: #F6F6F6;
+}
+
+.help{
+    max-width: 1280;
+    height: 611;
+    background-color: #FFFFFF;
+}
+
+.donation{
+    max-width: 1280px;
+    height: 462px;
+    background-color: #F6F6F6;
+}
+
+.footer {
+    max-width: 1280px;
+    height: 350px;
+    background: linear-gradient(0deg, #211F20, #211F20),
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
