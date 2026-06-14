@@ -27,7 +27,7 @@
           <nav class="menu">
             <ul>
               <li><a href="#">About the shelter</a></li>
-              <li><a href="#">Our pets</a></li>
+              <li><a href="our-pets.html">Our pets</a></li>
               <li><a href="#">Help the shelter</a></li>
               <li><a href="#contacts">Contacts</a></li>
             </ul>
@@ -41,7 +41,16 @@
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <button class="button-primary" onclick="document.getElementById('pets').scrollIntoView({behavior: 'smooth'})">Make a friend</button>
+            <button
+              class="button-primary"
+              onclick="
+                document
+                  .getElementById('pets')
+                  .scrollIntoView({ behavior: 'smooth' })
+              "
+            >
+              Make a friend
+            </button>
           </div>
           <img src="images/start-screen-puppy.png" alt="start-screen-puppy" />
         </div>
@@ -254,7 +263,10 @@
       <footer class="footer" id="contacts">
         <div class="footer-content">
           <div class="contacts">
-            <h3>For questions and suggestions</h3>
+            <h3>
+              For questions <br />
+              and suggestions
+            </h3>
             <div class="mail">
               <img src="images/icon-email.svg" alt="mail-iconofy" />
               <h4>email@shelter.com</h4>

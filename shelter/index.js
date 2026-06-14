@@ -8,7 +8,7 @@ console.log(
 )
 
 document.addEventListener('DOMContentLoaded', function() {
-    // === КАРУСЕЛЬ ===
+
     const track = document.getElementById('sliderTrack');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateSlider();
     window.addEventListener('resize', updateSlider);
     
-    // === МОДАЛЬНОЕ ОКНО ===
     const petsData = {
         'Katrine': {
             type: 'Cat',

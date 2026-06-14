@@ -10,7 +10,6 @@
   overflow: auto;
 }
 
-/* Контейнер модального окна - центрирование */
 .modal-window {
   position: absolute;
   top: 50%;
@@ -35,17 +34,15 @@
   }
 }
 
-/* Кнопка закрытия внутри modal-window в правом верхнем углу */
-/* Кнопка закрытия внутри modal-window в правом верхнем углу */
 .modal-close-btn {
   position: absolute;
-  right: -46px;  /* Отступ справа от модального окна */
-  top: -46px;    /* Отступ сверху от модального окна */
+  right: -46px;
+  top: -46px;
   width: 52px;
   height: 52px;
   border-radius: 100px;
   border: 2px solid #F1CDB3;
-  background: rgba(41, 41, 41, 0.05); /* Цвет как у затемнения */
+  background: rgba(41, 41, 41, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +73,6 @@
   gap: 29px;
   height: 100%;
   box-sizing: border-box;
-
 }
 
 .modal-img {
@@ -162,7 +158,6 @@
   color: #F1CDB3;
 }
 
-/* Стили для h5 внутри списка */
 .modal-info .list-item h5 {
   font-family: Georgia;
   font-weight: 400;
@@ -185,58 +180,3 @@
   color: #000000;
 }
 
-/* Адаптивность для маленьких экранов */
-@media (max-width: 1000px) {
-  .modal-window {
-    width: 90%;
-    height: auto;
-    max-width: 952px;
-    max-height: 90vh;
-    overflow-y: auto;
-  }
-  
-  .modal-close-btn {
-    right: -10px;
-    top: -10px;
-    width: 44px;
-    height: 44px;
-  }
-  
-  .modal-close-btn img {
-    width: 10px;
-    height: 10px;
-  }
-  
-  .modal-body {
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-  }
-  
-  .modal-img {
-    width: 250px;
-    height: 250px;
-    margin-top: 0;
-  }
-  
-  .modal-info {
-    padding: 20px;
-  }
-  
-  .modal-info h3,
-  .modal-info h5,
-  .modal-info p {
-    text-align: center;
-  }
-  
-  .modal-info ul {
-    width: 100%;
-  }
-}
-
-.modal-details{
-  width: 154;
-  height: 102;
-  opacity: 1;
-  margin-top: 40px;
-}
