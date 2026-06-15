@@ -16,7 +16,7 @@
     vertical-align: middle;
     color: #545454;
     padding: 0 446px 60px 446px;
-
+    white-space: nowrap;
 }
 
 .help-content-list{
@@ -29,12 +29,13 @@
 .help-content-list .row1{
     display: flex;
     gap: 120px;
+    white-space: nowrap;
 }
 
 .help-content-list .row2{
     display: flex;
     gap: 120px;
-    padding-left: 98px;
+    padding-left: 84px;
 }
 
 .help-card{
