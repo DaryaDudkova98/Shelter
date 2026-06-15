@@ -131,18 +131,23 @@
     padding: 15px 45px;
     border-radius: 100px;
     background-color: #F1CDB3;
-    color: #292929;
     width: 261px;
     height: 52px;
+    
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pets .pets-content .button-primary a{
+    text-decoration: none;
+    color: #292929;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.06em;
     line-height: 130%;
-    white-space: nowrap;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .pets .pets-content .button-primary:hover {
