@@ -1,155 +1,158 @@
 .pets .pets-content {
-    width: 1200px;
-    padding: 80px 40px 100px 40px;
-    position: relative;
+  width: 1200px;
+  padding: 80px 40px 100px 40px;
+  position: relative;
 }
 
 .pets .pets-content h3 {
-    width: 400px;
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 130%;
-    letter-spacing: 6%;
-    text-align: center;
-    margin: 0 auto 60px auto;
-    color: #545454;
+  width: 400px;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 6%;
+  text-align: center;
+  margin: 0 auto 60px auto;
+  color: #545454;
 }
 
 .pets-slider-wrapper {
-    position: relative;
-    margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
 
 .slider-container {
-    overflow: hidden;
-    width: 990px;
-    margin: 0 auto;
+  overflow: hidden;
+  width: 990px;
+  margin: 0 auto;
 }
 
 .slider-viewport {
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 .slider-track {
-    display: flex;
-    gap: 90px;
-    width: fit-content;
-    height: 435px;
-    transition: transform 0.5s ease;
+  display: flex;
+  gap: 90px;
+  width: fit-content;
+  height: 435px;
+  transition: transform 0.5s ease;
 }
 
 .controls {
-    position: absolute;
-    top: 51.5%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    pointer-events: none;
-    padding: 0 calc((100% - 990px) / 2 - 53px - 52px);
+  position: absolute;
+  top: 51.5%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0 calc((100% - 990px) / 2 - 53px - 52px);
 }
 
 .nav-btn {
-    width: 52px;
-    height: 52px;
-    box-sizing: border-box;
-    border-radius: 100px;
-    border: 2px solid #F1CDB3;
-    background: #FAFAFA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    cursor: pointer;
-    pointer-events: auto;
-    transition: background-color 0.3s ease;
+  width: 52px;
+  height: 52px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #f1cdb3;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background-color 0.3s ease;
 }
 
 .nav-btn:hover {
-    background-color: #FDDCC4;
+  background-color: #fddcc4;
 }
 
 .nav-btn img {
-    width: 14px;
-    height: 6px;
+  width: 14px;
+  height: 6px;
 }
 
 .card {
-    width: 270px;
-    height: 435px;
-    border-radius: 9px;
-    background: #FAFAFA;
-    flex-shrink: 0;
+  width: 270px;
+  height: 435px;
+  border-radius: 9px;
+  background: #fafafa;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
 .card .card-img {
-    width: 270px;
-    height: 270px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
+  width: 270px;
+  height: 270px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  cursor: pointer;
 }
 
 .card .card-caption {
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 6%;
-    text-align: center;
-    color: #545454;
-    margin: 30px 0 0 0;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 6%;
+  text-align: center;
+  color: #545454;
+  margin: 30px 0 0 0;
+  cursor: pointer;
 }
 
 .card .card-btn {
-    width: 187px;
-    height: 52px;
-    margin: 30px auto 0 auto;
-    display: block;
-    border-radius: 100px;
-    border: 2px solid #F1CDB3;
-    background: #FAFAFA;
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    letter-spacing: 6%;
-    color: #292929;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 187px;
+  height: 52px;
+  margin: 30px auto 0 auto;
+  display: block;
+  border-radius: 100px;
+  border: 2px solid #f1cdb3;
+  background: #fafafa;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 6%;
+  color: #292929;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .card .card-btn:hover {
-    background-color: #F1CDB3;
+  background-color: #f1cdb3;
 }
 
 .pets .pets-content .button-primary {
-    margin: 60px 469px 0 470px;
-    display: block;
-    padding: 15px 45px;
-    border-radius: 100px;
-    background-color: #F1CDB3;
-    width: 261px;
-    height: 52px;
-    
-    white-space: nowrap;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  margin: 60px 469px 0 470px;
+  display: block;
+  padding: 15px 45px;
+  border-radius: 100px;
+  background-color: #f1cdb3;
+  width: 261px;
+  height: 52px;
+
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.pets .pets-content .button-primary a{
-    text-decoration: none;
-    color: #292929;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    line-height: 130%;
+.pets .pets-content .button-primary a {
+  text-decoration: none;
+  color: #292929;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 130%;
 }
 
 .pets .pets-content .button-primary:hover {
-    background-color: #FDDCC4;
+  background-color: #fddcc4;
 }

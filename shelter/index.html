@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter</title>
+    <link
+      rel="icon"
+      href="images/icon-bowls-and-cups.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/startScreen.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/pets.css" />
@@ -15,8 +21,9 @@
     <link rel="stylesheet" href="css/modal.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="start-screen">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
         <header class="header">
           <div class="logo">
             <a href="#" class="logo-link">
@@ -33,234 +40,258 @@
             </ul>
           </nav>
         </header>
-        <div class="start-screen-content">
-          <div class="content">
-            <h2>Not only people need a house</h2>
-            <p>
-              We offer to give a chance to a little and nice puppy with an
-              extremely wide and open heart. He or she will love you more than
-              anybody else in the world, you will see!
-            </p>
-            <button
-              class="button-primary"
-              onclick="
-                document
-                  .getElementById('pets')
-                  .scrollIntoView({ behavior: 'smooth' })
-              "
-            >
-              Make a friend
+
+        <section class="start-screen">
+          <div class="start-screen-content">
+            <div class="content">
+              <h1 style="display: none">Not only</h1>
+              <h2>Not only people need a house</h2>
+              <p>
+                We offer to give a chance to a little and nice puppy with an
+                extremely wide and open heart. He or she will love you more than
+                anybody else in the world, you will see!
+              </p>
+              <button
+                class="button-primary"
+                onclick="
+                  document
+                    .getElementById('pets')
+                    .scrollIntoView({ behavior: 'smooth' })
+                "
+              >
+                Make a friend
+              </button>
+            </div>
+            <img src="images/start-screen-puppy.png" alt="start-screen-puppy" />
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main-container">
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="container">
+          <div class="about-content">
+            <img src="images/about-pets.png" alt="about-pets" />
+            <div class="content">
+              <h3>About the shelter "Cozy House"</h3>
+              <p class="paragraph-l" style="width: 430px; height: 96px">
+                Currently we have 121 dogs and 342 cats on our hands and
+                statistics show that only 20% of them will find a family. The
+                others will continue to live with us and will be waiting for a
+                lucky chance to become dearly loved.
+              </p>
+              <p
+                class="paragraph-l"
+                style="width: 430px; height: 144px; margin-top: 25px"
+              >
+                We feed our wards with the best food and make sure that they do
+                not get sick, feel comfortable (including psychologically) and
+                well. We are supported by 87 volunteers and 28 employees of
+                various skill levels. About 12% of the animals are taken by the
+                shelter staff. Taking care of the animals, they become attached
+                to the pets and would hardly ever leave them alone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PETS -->
+      <section class="pets" id="pets">
+        <div class="container">
+          <div class="pets-content">
+            <h3>
+              Our friends who <br />
+              are looking for a house
+            </h3>
+            <div class="slider-container">
+              <div class="slider-viewport">
+                <div class="slider-track" id="sliderTrack">
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-katrine.png"
+                      alt="pets-katrine"
+                    />
+                    <p class="card-caption">Katrine</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-jennifer.png"
+                      alt="pets-jennifer"
+                    />
+                    <p class="card-caption">Jennifer</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-woody.png"
+                      alt="pets-woddy"
+                    />
+                    <p class="card-caption">Woody</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-sophia.png"
+                      alt="pets-sophia"
+                    />
+                    <p class="card-caption">Sophia</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-timmy.png"
+                      alt="pets-timmy"
+                    />
+                    <p class="card-caption">Timmy</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-charly.png"
+                      alt="pets-charly"
+                    />
+                    <p class="card-caption">Charly</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-scarlet.png"
+                      alt="pets-scarlet"
+                    />
+                    <p class="card-caption">Scarlet</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/pets-freddie.png"
+                      alt="pets-freddie"
+                    />
+                    <p class="card-caption">Freddie</p>
+                    <button class="card-btn">Learn more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="controls">
+                <button class="nav-btn" id="prevBtn">
+                  <img src="images/Arrow-left.png" alt="Arrow-left" />
+                </button>
+                <button class="nav-btn" id="nextBtn">
+                  <img src="images/Arrow-right.png" alt="Arrow-right" />
+                </button>
+              </div>
+            </div>
+            <button class="button-primary">
+              <a href="our-pets.html">Get to know the rest</a>
             </button>
           </div>
-          <img src="images/start-screen-puppy.png" alt="start-screen-puppy" />
         </div>
-      </div>
+      </section>
 
-      <div class="about">
-        <div class="about-content">
-          <img src="images/about-pets.png" alt="about-pets" />
-          <div class="content">
-            <h3>About the shelter “Cozy House”</h3>
-            <p class="paragraph-l" style="width: 430px; height: 96px">
-              Currently we have 121 dogs and 342 cats on our hands and
-              statistics show that only 20% of them will find a family. The
-              others will continue to live with us and will be waiting for a
-              lucky chance to become dearly loved.
-            </p>
-            <p
-              class="paragraph-l"
-              style="
-                width: 430px;
-                height: 144px;
-                margin-top: 25px;
-                vertical-align: middle;
-              "
-            >
-              We feed our wards with the best food and make sure that they do
-              not get sick, feel comfortable (including psychologically) and
-              well. We are supported by 87 volunteers and 28 employees of
-              various skill levels. About 12% of the animals are taken by the
-              shelter staff. Taking care of the animals, they become attached to
-              the pets and would hardly ever leave them alone.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="pets" id="pets">
-        <div class="pets-content">
-          <h3>
-            Our friends who <br />
-            are looking for a house
-          </h3>
-          <div class="slider-container">
-            <div class="slider-viewport">
-              <div class="slider-track" id="sliderTrack">
-                <div class="card">
-                  <img
-                    class="card-img"
-                    src="images/pets-katrine.png"
-                    alt="pets-katrine"
-                  />
-                  <p class="card-caption">Katrine</p>
-                  <button class="card-btn">Learn more</button>
+      <!-- HELP -->
+      <section class="help" id="help-shelter">
+        <div class="container">
+          <div class="help-content">
+            <h3>
+              How you can help <br />
+              our shelter
+            </h3>
+            <div class="help-content-list">
+              <div class="row1">
+                <div class="help-card">
+                  <img src="images/icon-pet-food.svg" alt="pet-food" />
+                  <h4 class="help-subtitle">Pet food</h4>
                 </div>
-                <div class="card">
+                <div class="help-card">
                   <img
-                    class="card-img"
-                    src="images/pets-jennifer.png"
-                    alt="pets-jennifer"
+                    src="images/icon-transportation.svg"
+                    alt="icon-transportation"
                   />
-                  <p class="card-caption">Jennifer</p>
-                  <button class="card-btn">Learn more</button>
+                  <h4 class="help-subtitle">Transportation</h4>
                 </div>
-                <div class="card">
-                  <img
-                    class="card-img"
-                    src="images/pets-woody.png"
-                    alt="pets-woddy"
-                  />
-                  <p class="card-caption">Woody</p>
-                  <button class="card-btn">Learn more</button>
+                <div class="help-card">
+                  <img src="images/icon-toys.svg" alt="toys" />
+                  <h4 class="help-subtitle">Toys</h4>
                 </div>
-                <div class="card">
-                  <img
-                    class="card-img"
-                    src="images/pets-sophia.png"
-                    alt="pets-sophia"
-                  />
-                  <p class="card-caption">Sophia</p>
-                  <button class="card-btn">Learn more</button>
+                <div class="help-card">
+                  <img src="images/icon-bowls-and-cups.svg" alt="bowls" />
+                  <h4 class="help-subtitle">Bowls and cups</h4>
                 </div>
-                <div class="card">
-                  <img
-                    class="card-img"
-                    src="images/pets-timmy.png"
-                    alt="pets-timmy"
-                  />
-                  <p class="card-caption">Timmy</p>
-                  <button class="card-btn">Learn more</button>
-                </div>
-                <div class="card">
-                  <img
-                    class="card-img"
-                    src="images/pets-charly.png"
-                    alt="pets-charly"
-                  />
-                  <p class="card-caption">Charly</p>
-                  <button class="card-btn">Learn more</button>
-                </div>
-                <div class="card">
-                  <img
-                    class="card-img"
-                    src="images/pets-scarlet.png"
-                    alt="pets-scarlet"
-                  />
-                  <p class="card-caption">Scarlet</p>
-                  <button class="card-btn">Learn more</button>
-                </div>
-                <div class="card">
-                  <img
-                    class="card-img"
-                    src="images/pets-freddie.png"
-                    alt="pets-freddie"
-                  />
-                  <p class="card-caption">Freddie</p>
-                  <button class="card-btn">Learn more</button>
+                <div class="help-card">
+                  <img src="images/icon-shampoos.svg" alt="shampoos" />
+                  <h4 class="help-subtitle">Shampoos</h4>
                 </div>
               </div>
-            </div>
-            <div class="controls">
-              <button class="nav-btn" id="prevBtn">
-                <img src="images/Arrow-left.png" alt="Arrow-left" />
-              </button>
-              <button class="nav-btn" id="nextBtn">
-                <img src="images/Arrow-right.png" alt="Arrow-right" />
-              </button>
-            </div>
-          </div>
-          <button class="button-primary"> <a href="our-pets.html">Get to know the rest</a></button>
-        </div>
-      </div>
-
-      <div class="help" id="help-shelter">
-        <div class="help-content">
-          <h3>How you can help <br> our shelter</h3>
-          <div class="help-content-list">
-            <div class="row1">
-              <div class="help-card">
-                <img src="images/icon-pet-food.svg" alt="pet-food" />
-                <h4 class="help-subtitle">Pet food</h4>
-              </div>
-              <div class="help-card">
-                <img
-                  src="images/icon-transportation.svg"
-                  alt="icon-transportation"
-                />
-                <h4 class="help-subtitle">Transportation</h4>
-              </div>
-              <div class="help-card">
-                <img src="images/icon-toys.svg" alt="toys" />
-                <h4 class="help-subtitle">Toys</h4>
-              </div>
-              <div class="help-card">
-                <img src="images/icon-bowls-and-cups.svg" alt="bowls" />
-                <h4 class="help-subtitle">Bowls and cups</h4>
-              </div>
-              <div class="help-card">
-                <img src="images/icon-shampoos.svg" alt="shampoos" />
-                <h4 class="help-subtitle">Shampoos</h4>
-              </div>
-            </div>
-
-            <div class="row2">
-              <div class="help-card">
-                <img src="images/icon-vitamins.svg" alt="vitamins" />
-                <h4 class="help-subtitle">Vitamins</h4>
-              </div>
-              <div class="help-card">
-                <img src="images/icon-medicines.svg" alt="medicines" />
-                <h4 class="help-subtitle">Medicines</h4>
-              </div>
-              <div class="help-card">
-                <img
-                  src="images/icon-collars-leashes.svg"
-                  alt="collars-leashes"
-                />
-                <h4 class="help-subtitle">Collars / leashes</h4>
-              </div>
-              <div class="help-card">
-                <img src="images/icon-sleeping-area.svg" alt="sleeping-areas" />
-                <h4 class="help-subtitle">Sleeping areas</h4>
+              <div class="row2">
+                <div class="help-card">
+                  <img src="images/icon-vitamins.svg" alt="vitamins" />
+                  <h4 class="help-subtitle">Vitamins</h4>
+                </div>
+                <div class="help-card">
+                  <img src="images/icon-medicines.svg" alt="medicines" />
+                  <h4 class="help-subtitle">Medicines</h4>
+                </div>
+                <div class="help-card">
+                  <img
+                    src="images/icon-collars-leashes.svg"
+                    alt="collars-leashes"
+                  />
+                  <h4 class="help-subtitle">Collars / leashes</h4>
+                </div>
+                <div class="help-card">
+                  <img
+                    src="images/icon-sleeping-area.svg"
+                    alt="sleeping-areas"
+                  />
+                  <h4 class="help-subtitle">Sleeping areas</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="donation">
-        <div class="donation-content">
-          <img class="dog" src="images/donation-dog.png" alt="donation-dog" />
-          <div class="content">
-            <h3>You can also make a donation</h3>
-            <h5>Name of the bank / Type of bank account</h5>
-            <div class="credit-card">
-              <div class="credit-card-content">
-                <img src="images/credit-card.svg" alt="credit-card" />
-                <a href="##">8380 2880 8028 8791 7435</a>
+      <!-- DONATION -->
+      <section class="donation">
+        <div class="container">
+          <div class="donation-content">
+            <img class="dog" src="images/donation-dog.png" alt="donation-dog" />
+            <div class="content">
+              <h3>You can also make a donation</h3>
+              <h5>Name of the bank / Type of bank account</h5>
+              <div class="credit-card">
+                <div class="credit-card-content">
+                  <img src="images/credit-card.svg" alt="credit-card" />
+                  <a href="##">8380 2880 8028 8791 7435</a>
+                </div>
               </div>
+              <p>
+                Legal information and lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
+                sed ac diam. Praesent ultrices maximus tortor et vulputate.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              </p>
             </div>
-            <p>
-              Legal information and lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
-              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
-              et malesuada fames ac ante ipsum primis in faucibus.
-            </p>
           </div>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <footer class="footer" id="contacts">
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contacts">
+      <div class="container">
         <div class="footer-content">
           <div class="contacts">
             <h3>
@@ -289,9 +320,10 @@
           </div>
           <img class="footer-puppy" src="images/footer-puppy.png" alt="puppy" />
         </div>
-      </footer>
-    </div>
-    <!-- Modal window -->
+      </div>
+    </footer>
+
+    <!-- ===== MODAL ===== -->
     <div id="modal" class="modal">
       <div class="modal-window" style="width: 900px; height: 500px">
         <button class="modal-close-btn">

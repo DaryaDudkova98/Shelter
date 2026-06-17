@@ -1,8 +1,9 @@
 .our-pets-header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 100;
+  width: 100%;
 }
 
 .our-pets-header .header {
@@ -16,8 +17,8 @@
 }
 
 .our-pets-header .logo {
-    width: 184px;
-    height: 60px;
+  width: 184px;
+  height: 60px;
 }
 
 .our-pets-header .logo a {
@@ -25,15 +26,14 @@
 }
 
 .our-pets-header .logo .title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 32px;
-  line-height: 110.00000000000001%;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #545454;
   white-space: nowrap;
   margin-bottom: 10px;
-  vertical-align: middle;
 }
 
 .our-pets-header .logo .subtitle {
@@ -44,7 +44,6 @@
   letter-spacing: 0.1em;
   color: #292929;
   white-space: nowrap;
-  vertical-align: middle;
 }
 
 .our-pets-header .menu ul {
@@ -73,30 +72,35 @@
 }
 
 .our-pets-header .menu ul li a.active {
-  border-bottom: 3px solid #F1CDB3;
+  border-bottom: 3px solid #f1cdb3;
   color: #292929;
 }
 
 .our-pets-content {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 80px 0 100px 0;
+}
+
+.our-pets-content .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 40px 100px 40px;
+  padding: 0 40px;
   text-align: center;
-    background-color: #F6F6F6;
 }
 
 .our-pets-content h3 {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   text-align: center;
-  vertical-align: middle;
   color: #545454;
-  margin: 0 400px 45px 400px;
+  margin-bottom: 45px;
 }
 
+/* ===== GRID CARD ===== */
 .pets-grid {
   display: grid;
   grid-template-columns: repeat(4, 270px);
@@ -109,7 +113,7 @@
   width: 270px;
   height: 435px;
   border-radius: 9px;
-  background: #FAFAFA;
+  background: #fafafa;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -127,11 +131,11 @@
 }
 
 .pets-grid .card-caption {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   text-align: center;
   color: #545454;
   margin: 30px 0 0 0;
@@ -143,22 +147,23 @@
   margin: 30px auto 0 auto;
   display: block;
   border-radius: 100px;
-  border: 2px solid #F1CDB3;
-  background: #FAFAFA;
-  font-family: Georgia;
+  border: 2px solid #f1cdb3;
+  background: #fafafa;
+  font-family: Georgia, serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .pets-grid .card-btn:hover {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
 }
 
+/* ===== PAGINATION ===== */
 .pagination {
   display: flex;
   justify-content: center;
@@ -171,9 +176,9 @@
   width: 52px;
   height: 52px;
   border-radius: 100px;
-  border: 2px solid #F1CDB3;
-  background: #FAFAFA;
-  font-family: Georgia;
+  border: 2px solid #f1cdb3;
+  background: #fafafa;
+  font-family: Georgia, serif;
   font-weight: 400;
   font-size: 20px;
   color: #292929;
@@ -185,14 +190,14 @@
 }
 
 .pag-btn:hover:not(:disabled) {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   transform: scale(1.05);
 }
 
 .pag-btn:disabled {
-  background-color: #F6F6F6;
-  border-color: #CDCDCD;
-  color: #CDCDCD;
+  background-color: #f6f6f6;
+  border-color: #cdcdcd;
+  color: #cdcdcd;
   cursor: not-allowed;
   opacity: 1;
   transform: none;
@@ -202,21 +207,14 @@
   width: 52px;
   height: 52px;
   border-radius: 100px;
-  border: 2px solid #F1CDB3;
-  background: #F1CDB3;
-  font-family: Georgia;
+  border: 2px solid #f1cdb3;
+  background: #f1cdb3;
+  font-family: Georgia, serif;
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   color: #292929;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media (max-width: 1200px) {
-  .pets-grid {
-    grid-template-columns: repeat(3, 270px);
-    gap: 30px;
-  }
 }

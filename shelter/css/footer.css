@@ -1,5 +1,6 @@
 .footer {
-  background: radial-gradient(ellipse at 80% 85%, 
+  background: radial-gradient(
+    ellipse at 80% 85%,
     rgb(33, 31, 32) 0%,
     rgb(91, 72, 58) 45%,
     rgb(38, 36, 37) 100%
@@ -8,13 +9,17 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  padding-top: 40px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .footer-content {
-  max-width: 1200px;
   min-height: 310px;
-  padding-top: 40px;
-  margin: 0 40px 0 40px;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -27,12 +32,12 @@
 }
 
 .footer-content .contacts h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-  letter-spacing: 6%;
-  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  color: #ffffff;
   margin: 0 0 40px 0;
   padding-top: 16px;
   white-space: nowrap;
@@ -60,12 +65,12 @@
 
 .footer-content .contacts .mail h4,
 .footer-content .contacts .phone h4 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
-  letter-spacing: 6%;
-  color: #F1CDB3;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
   margin-left: 20px;
 }
 
@@ -75,12 +80,12 @@
 }
 
 .footer-content .locations h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-  letter-spacing: 6%;
-  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  color: #ffffff;
   margin: 0 0 40px 0;
   padding-top: 16px;
 }
@@ -107,12 +112,12 @@
 
 .footer-content .locations .boston h4,
 .footer-content .locations .london h4 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 114.99999999999999%;
-  letter-spacing: 6%;
-  color: #F1CDB3;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
   margin-left: 20px;
 }
 
@@ -135,4 +140,3 @@
 .location-link:hover {
   opacity: 0.7;
 }
-

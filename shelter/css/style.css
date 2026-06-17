@@ -1,42 +1,61 @@
-.main-container{
-    max-width: 1280px;
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-.about{
-    max-width: 1280px;
-    height: 588px;
-    position: static;
-    top: 908px;
-    background-color: #FFFFFF;
+.main-container {
+  height: auto;
+  margin: 0 auto;
 }
 
-.pets{
-    max-width: 1280px;
-    height: 877px;
-    background-color: #F6F6F6;
+.hero {
+  background:
+    radial-gradient(
+      ellipse at 80% 85%,
+      rgb(33, 31, 32) 0%,
+      rgb(91, 72, 58) 45%,
+      rgb(38, 36, 37) 100%
+    ),
+    url("../images/start-screen-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 908px;
 }
 
-.help{
-    max-width: 1280;
-    height: 611;
-    background-color: #FFFFFF;
+.about {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 588px;
 }
 
-.donation{
-    max-width: 1280px;
-    height: 462px;
-    background-color: #F6F6F6;
+.pets {
+  background-color: #f6f6f6;
+  width: 100%;
+  min-height: 877px;
+}
+
+.help {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 611px;
+}
+
+.donation {
+  background-color: #f6f6f6;
+  width: 100%;
+  min-height: 462px;
 }
 
 .footer {
-    max-width: 1280px;
-    height: 350px;
-    background: linear-gradient(0deg, #211F20, #211F20),
-radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background:
+    linear-gradient(0deg, #211f20, #211f20),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 310px;
 }

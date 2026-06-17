@@ -1,142 +1,69 @@
 .start-screen {
-    height: 908px;
-    background: radial-gradient(ellipse at 80% 85%, 
-        rgb(33, 31, 32) 0%,
-        rgb(91, 72, 58) 45%,
-        rgb(38, 36, 37) 100%
-    ), url('images/start-screen-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    height: 60px;
-    margin: 0 40px 0 40px;
-    padding-top: 30px;
-}
-
-.header .logo a{
-    text-decoration: none;
-}
-
-.header .logo .title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 110%;
-    letter-spacing: 0.06em;
-    color: #F1CDB3;
-    white-space: nowrap;
-}
-
-.header .logo .subtitle {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 100%;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-    white-space: nowrap;
-}
-
-.menu ul {
-    display: flex;
-    gap: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li {
-    list-style: none;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #CDCDCD;
-    transition: color 0.3s ease;
-}
-
-.menu ul li:hover a {
-    color: #FAFAFA;
-}
-
-.menu ul li:active a {
-    border-bottom: 3px solid #F1CDB3;
-    color: #FAFAFA;
+  height: 818px;
 }
 
 .start-screen-content {
-    max-width: 1200px;
-    margin: 90px auto 0 auto;
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+  max-width: 1200px;
+  padding: 90px 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 .start-screen-content img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    display: block;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .content h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 130%;
-    width: 310px;
-    height: 114px;
-    color: #ffffff;
-    margin-bottom: 42px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  width: 310px;
+  height: 114px;
+  color: #ffffff;
+  margin-bottom: 42px;
 }
 
 .content p {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 460px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    color: #CDCDCD;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 460px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #cdcdcd;
 }
-.start-screen-content .button-primary a{
-    text-decoration: none;
-    color: #292929;
+.start-screen-content .button-primary a {
+  text-decoration: none;
+  color: #292929;
 }
 
 .start-screen-content .button-primary {
-    margin-top: 42px;
-    padding: 15px 45px;
-    border-radius: 100px;
-    background-color: #F1CDB3;
-    width: 207px;
-    height: 52px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    line-height: 130%;
-    white-space: nowrap;
-    border: none;
-    cursor: pointer;
+  margin-top: 42px;
+  padding: 15px 45px;
+  border-radius: 100px;
+  background-color: #f1cdb3;
+  width: 207px;
+  height: 52px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
 }
 
 .start-screen-content .button-primary:hover {
-    background-color: #FDDCC4;
+  background-color: #fddcc4;
 }
 
 .start-screen-content .button-primary:active {
-    background-color: #ffffff;
-    border: 2px solid #F1CDB3;
+  background-color: #ffffff;
+  border: 2px solid #f1cdb3;
 }

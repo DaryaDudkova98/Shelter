@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/modal.css" />
   </head>
   <body>
-    <div class="main-container">
+    <main class="main-container">
       <div class="our-pets-header">
         <header class="header">
           <div class="logo">
@@ -31,60 +31,79 @@
         </header>
       </div>
 
-      <div class="our-pets-content">
-        <h3>
-          Our friends who <br />
-          are looking for a house
-        </h3>
-        
-        <div class="pets-grid" id="petsGrid">
-        </div>
+      <section class="our-pets-content">
+        <div class="container">
+          <h1 style="display: none">Not only</h1>
+          <h3>
+            Our friends who <br />
+            are looking for a house
+          </h3>
 
-        <div class="pagination">
-          <button class="pag-btn" id="firstPageBtn" disabled>&lt;&lt;</button>
-          <button class="pag-btn" id="prevPageBtn" disabled>&lt;</button>
-          <span class="page-number" id="pageNumber">1</span>
-          <button class="pag-btn" id="nextPageBtn">&gt;</button>
-          <button class="pag-btn" id="lastPageBtn">&gt;&gt;</button>
+          <div class="pets-grid" id="petsGrid"></div>
+
+          <div class="pagination">
+            <button class="pag-btn" id="firstPageBtn" disabled>&lt;&lt;</button>
+            <button class="pag-btn" id="prevPageBtn" disabled>&lt;</button>
+            <span class="page-number" id="pageNumber">1</span>
+            <button class="pag-btn" id="nextPageBtn">&gt;</button>
+            <button class="pag-btn" id="lastPageBtn">&gt;&gt;</button>
+          </div>
         </div>
-      </div>
+      </section>
 
       <footer class="footer" id="contacts">
-        <div class="footer-content">
-          <div class="contacts">
-            <h3>For questions <br> and suggestions</h3>
-            <div class="mail">
-              <a href="mailto:email@shelter.com" class="contact-link">
-                <img src="images/icon-email.svg" alt="mail-iconofy" />
-                <h4>email@shelter.com</h4>
-              </a>
+        <div class="container">
+          <div class="footer-content">
+            <div class="contacts">
+              <h3>
+                For questions <br />
+                and suggestions
+              </h3>
+              <div class="mail">
+                <a href="mailto:email@shelter.com" class="contact-link">
+                  <img src="images/icon-email.svg" alt="mail-iconofy" />
+                  <h4>email@shelter.com</h4>
+                </a>
+              </div>
+              <div class="phone">
+                <a href="tel:+136745677554" class="contact-link">
+                  <img src="images/icon-phone.svg" alt="phone-iconofy" />
+                  <h4>+13 674 567 75 54</h4>
+                </a>
+              </div>
             </div>
-            <div class="phone">
-              <a href="tel:+136745677554" class="contact-link">
-                <img src="images/icon-phone.svg" alt="phone-iconofy" />
-                <h4>+13 674 567 75 54</h4>
-              </a>
+            <div class="locations">
+              <h3>We are waiting for your visit</h3>
+              <div class="boston">
+                <a
+                  href="https://maps.google.com/?q=1+Central+Street+Boston"
+                  target="_blank"
+                  class="location-link"
+                >
+                  <img src="images/icon-marker.svg" alt="icon-maker" />
+                  <h4>1 Central Street, Boston (entrance from the store)</h4>
+                </a>
+              </div>
+              <div class="london">
+                <a
+                  href="https://maps.google.com/?q=18+South+Park+London"
+                  target="_blank"
+                  class="location-link"
+                >
+                  <img src="images/icon-marker.svg" alt="icon-maker" />
+                  <h4>18 South Park, London</h4>
+                </a>
+              </div>
             </div>
+            <img
+              class="footer-puppy"
+              src="images/footer-puppy.png"
+              alt="puppy"
+            />
           </div>
-          <div class="locations">
-            <h3>We are waiting for your visit</h3>
-            <div class="boston">
-              <a href="https://maps.google.com/?q=1+Central+Street+Boston" target="_blank" class="location-link">
-                <img src="images/icon-marker.svg" alt="icon-maker" />
-                <h4>1 Central Street, Boston (entrance from the store)</h4>
-              </a>
-            </div>
-            <div class="london">
-              <a href="https://maps.google.com/?q=18+South+Park+London" target="_blank" class="location-link">
-                <img src="images/icon-marker.svg" alt="icon-maker" />
-                <h4>18 South Park, London</h4>
-              </a>
-            </div>
-          </div>
-          <img class="footer-puppy" src="images/footer-puppy.png" alt="puppy" />
         </div>
       </footer>
-    </div>
+    </main>
 
     <div id="modal" class="modal">
       <div class="modal-window" style="width: 900px; height: 500px">
@@ -105,13 +124,21 @@
                   <h5><strong>Age:</strong> <span id="modalAge"></span></h5>
                 </li>
                 <li class="list-item">
-                  <h5><strong>Inoculations:</strong> <span id="modalVaccinations"></span></h5>
+                  <h5>
+                    <strong>Inoculations:</strong>
+                    <span id="modalVaccinations"></span>
+                  </h5>
                 </li>
                 <li class="list-item">
-                  <h5><strong>Diseases:</strong> <span id="modalDiseases"></span></h5>
+                  <h5>
+                    <strong>Diseases:</strong> <span id="modalDiseases"></span>
+                  </h5>
                 </li>
                 <li class="list-item">
-                  <h5><strong>Parasites:</strong> <span id="modalParasites"></span></h5>
+                  <h5>
+                    <strong>Parasites:</strong>
+                    <span id="modalParasites"></span>
+                  </h5>
                 </li>
               </ul>
             </div>
@@ -119,7 +146,7 @@
         </div>
       </div>
     </div>
-    
+
     <script src="our-pets.js"></script>
   </body>
 </html>
