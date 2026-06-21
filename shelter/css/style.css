@@ -59,3 +59,63 @@
   width: 100%;
   min-height: 310px;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+
+  .hero .container {
+    width: 768px;
+    height: 1165px;
+    padding: 0;
+  }
+
+  .about .container {
+    width: 768px;
+    height: 1048px;
+    padding: 0;
+  }
+
+  .donation .container {
+    width: 768px;
+    height: 783px;
+    padding: 0;
+  }
+
+  .main-container {
+    width: 768px;
+  }
+
+  .donation {
+    width: 768px;
+    height: 783px;
+  }
+
+  .footer {
+    width: 768px !important;
+    height: 639px;
+    padding: 0 !important;
+  }
+
+  .footer .container {
+    width: 768px !important;
+    height: 609px;
+    padding: 30px 0 0 0 !important;
+  }
+
+  .footer-content .contacts h3 {
+    padding-top: 0 !important;
+  }
+
+  .footer-content .locations h3 {
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-container {
+    width: 320px !important;
+    max-width: 320px !important;
+  }
+}

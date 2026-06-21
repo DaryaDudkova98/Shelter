@@ -140,3 +140,184 @@
 .location-link:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    width: 768px !important;
+    height: 639px !important;
+    row-gap: 0 !important;
+    column-gap: 60px;
+    flex-wrap: wrap;
+    margin: 0 30px 0 30px;
+  }
+
+  .footer-content .contacts {
+    width: 278px;
+    height: 234px;
+    padding-left: 34px;
+    order: 1;
+  }
+
+  .footer-content .locations {
+    width: 302px;
+    height: 234px;
+    padding-right: 34px;
+    order: 2;
+  }
+
+  .footer-content .footer-puppy {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    align-self: center;
+    order: 3;
+    padding: 0 204px 0 204px !important;
+    margin: 0 !important;
+  }
+
+  .footer-content .footer-puppy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ===== MEDIA QUERY for 320px ===== */
+@media (max-width: 320px) {
+  .footer {
+    width: 320px !important;
+    height: 809px !important;
+    padding: 0 !important;
+  }
+
+  .footer .container {
+    width: 320px !important;
+    height: 779px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footer-content {
+    width: 300px !important;
+    height: auto !important;
+    min-height: 809px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .footer-content .contacts {
+    width: 278px !important;
+    height: 208px !important;
+    padding: 0 !important;
+    margin: 30px 0 40px 0 !important;
+    order: 1 !important;
+    text-align: center !important;
+  }
+
+  .footer-content .contacts h3 {
+    font-size: 25px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    padding: 0 11px !important;
+    margin: 0 0 40px 0 !important;
+  }
+
+  .footer-content .contacts .mail {
+    width: 251px !important;
+    height: 32px !important;
+    padding-left: 24px !important;
+    padding-right: 25px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .footer-content .contacts .phone {
+    width: 239px !important;
+    height: 32px !important;
+    padding-left: 30px !important;
+    padding-right: 31px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .footer-content .contacts .mail h4,
+  .footer-content .contacts .phone h4 {
+    font-size: 18px !important;
+    margin-left: 20px !important;
+  }
+
+  .footer-content .locations {
+    width: 300px !important;
+    height: 222px !important;
+    padding: 0 !important;
+    order: 2 !important;
+    text-align: center !important;
+    margin-bottom: 40px !important;
+  }
+
+  .footer-content .locations h3 {
+    width: 270px !important;
+    font-size: 25px !important;
+    letter-spacing: 6%;
+    text-align: center !important;
+    padding-top: 0 !important;
+    margin: 0 0 30px 0 !important;
+    padding: 0 15px !important;
+  }
+
+  .footer-content .locations .boston,
+  .footer-content .locations .london {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    margin-bottom: 40px !important;
+    gap: 0 !important;
+    width: 100% !important;
+  }
+
+  .footer-content .locations .boston h4,
+  .footer-content .locations .london h4 {
+    font-size: 18px !important;
+    margin-left: 20px !important;
+    text-align: left !important;
+    line-height: 115% !important;
+    word-wrap: break-word !important;
+  }
+
+  .footer-content .locations .boston h4 {
+    max-width: 230px !important;
+    white-space: normal !important;
+  }
+
+  .footer-content .locations .london h4 {
+    max-width: 200px !important;
+    white-space: nowrap !important;
+  }
+
+  .footer-content .footer-puppy {
+    width: 260px !important;
+    height: auto !important;
+    order: 3 !important;
+    align-self: center !important;
+    padding: 0 !important;
+    margin: 0 20px !important;
+    display: block !important;
+  }
+
+  .footer-content .contacts .mail img,
+  .footer-content .contacts .phone img {
+    width: 40px !important;
+    height: 32px !important;
+  }
+
+  .footer-content .locations .boston img,
+  .footer-content .locations .london img {
+    width: 22px !important;
+    height: 32px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+  }
+}

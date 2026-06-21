@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,9 +31,14 @@
               <p class="subtitle">Shelter for pets in Boston</p>
             </a>
           </div>
-          <nav class="menu">
+          <div class="burger-menu" id="burgerMenu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          <nav class="menu" id="navMenu">
             <ul>
-              <li><a href="#">About the shelter</a></li>
+              <li><a href="#" class="active">About the shelter</a></li>
               <li><a href="our-pets.html">Our pets</a></li>
               <li><a href="#help-shelter">Help the shelter</a></li>
               <li><a href="#contacts">Contacts</a></li>
@@ -45,7 +50,10 @@
           <div class="start-screen-content">
             <div class="content">
               <h1 style="display: none">Not only</h1>
-              <h2>Not only people need a house</h2>
+              <h2>
+                Not only people <br />
+                need a house
+              </h2>
               <p>
                 We offer to give a chance to a little and nice puppy with an
                 extremely wide and open heart. He or she will love you more than
@@ -76,7 +84,10 @@
           <div class="about-content">
             <img src="images/about-pets.png" alt="about-pets" />
             <div class="content">
-              <h3>About the shelter "Cozy House"</h3>
+              <h3>
+                About the shelter <br />
+                "Cozy House"
+              </h3>
               <p class="paragraph-l" style="width: 430px; height: 96px">
                 Currently we have 121 dogs and 342 cats on our hands and
                 statistics show that only 20% of them will find a family. The
@@ -193,8 +204,11 @@
                 </button>
               </div>
             </div>
-            <button class="button-primary">
-              <a href="our-pets.html">Get to know the rest</a>
+            <button
+              class="button-primary"
+              onclick="window.location.href = 'our-pets.html'"
+            >
+              Get to know the rest
             </button>
           </div>
         </div>
@@ -209,7 +223,7 @@
               our shelter
             </h3>
             <div class="help-content-list">
-              <div class="row1">
+              <div class="help-row">
                 <div class="help-card">
                   <img src="images/icon-pet-food.svg" alt="pet-food" />
                   <h4 class="help-subtitle">Pet food</h4>
@@ -234,7 +248,8 @@
                   <h4 class="help-subtitle">Shampoos</h4>
                 </div>
               </div>
-              <div class="row2">
+
+              <div class="help-row">
                 <div class="help-card">
                   <img src="images/icon-vitamins.svg" alt="vitamins" />
                   <h4 class="help-subtitle">Vitamins</h4>
@@ -269,7 +284,10 @@
           <div class="donation-content">
             <img class="dog" src="images/donation-dog.png" alt="donation-dog" />
             <div class="content">
-              <h3>You can also make a donation</h3>
+              <h3>
+                You can also <br />
+                make a donation
+              </h3>
               <h5>Name of the bank / Type of bank account</h5>
               <div class="credit-card">
                 <div class="credit-card-content">
@@ -331,13 +349,20 @@
         </button>
         <div class="modal-content">
           <div class="modal-body">
-            <img id="modalImg" class="modal-img" src="" alt="pet" />
+            <img
+              id="modalImg"
+              class="modal-img"
+              src="images/pets-katrine.png"
+              alt="pet"
+            />
             <div class="modal-info">
-              <h3 id="modalName"></h3>
+              <h3 id="modalName">Pet Name</h3>
               <h4 id="modalSubtitle">
                 <strong id="modalType"></strong> - <span id="modalBreed"></span>
               </h4>
-              <h5 class="modal-description" id="modalDescription"></h5>
+              <h5 class="modal-description" id="modalDescription">
+                Pet description will appear here
+              </h5>
               <ul class="modal-details" id="modalDetails">
                 <li class="list-item">
                   <h5><strong>Age:</strong> <span id="modalAge"></span></h5>

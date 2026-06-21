@@ -85,3 +85,133 @@
   padding: 10px 15px 10px 0;
   white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+  .donation-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 505px;
+    height: 603px;
+    padding: 80px 132px 100px 131px;
+  }
+
+  .donation-content .dog {
+    order: 2;
+    margin: 0;
+  }
+
+  .donation-content .content {
+    order: 1;
+    padding: 0 63px 60px 62px;
+  }
+
+  .credit-card {
+    margin: 20px 31px 0 0;
+  }
+}
+
+/* ===== MEDIA QUERY for 320px ===== */
+@media (max-width: 320px) {
+  .donation {
+    width: 320px !important;
+    height: 542.2px !important;
+  }
+
+  .donation .container {
+    width: 310px !important;
+    height: 458.2px !important;
+  }
+
+  .donation-content {
+    width: 320px !important;
+    height: 542.2px !important;
+    display: flex;
+    flex-direction: column;
+    padding: 42px 10px !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .donation-content .content {
+    order: 1;
+    width: 300px !important;
+    height: 281px !important;
+    padding: 0 !important;
+    margin: 0 0 42px 0 !important;
+  }
+
+  .donation-content .content h3 {
+    width: 300px !important;
+    height: auto !important;
+    font-size: 25px !important;
+    line-height: 130% !important;
+    letter-spacing: 6% !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+
+  .donation-content .content h5 {
+    width: 273px !important;
+    height: auto !important;
+    font-size: 15px !important;
+    line-height: 110% !important;
+    letter-spacing: 0% !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    margin-top: 20px !important;
+    padding-left: 13px;
+    padding-right: 14px;
+  }
+
+  .donation-content .content p {
+    width: 280px !important;
+    height: 90px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    text-align: justify !important;
+    margin-top: 20px !important;
+    padding: 0 10px !important;
+  }
+
+  .credit-card {
+    margin: 20px 0 0 0 !important;
+    width: 281px !important;
+    padding-left: 9px !important;
+    padding-right: 10px !important;
+  }
+
+  .credit-card .credit-card-content {
+    max-width: 300px !important;
+    max-height: 43px !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .credit-card .credit-card-content img {
+    width: 30px !important;
+    height: 23px !important;
+    padding: 10px 0 10px 10px !important;
+  }
+
+  .credit-card .credit-card-content a {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 16px !important;
+    line-height: 115% !important;
+    letter-spacing: 6% !important;
+    padding: 10px 10px 10px 0 !important;
+    white-space: normal !important;
+    word-break: break-all !important;
+  }
+
+  .donation-content .dog {
+    order: 2;
+    width: 260px !important;
+    height: 135.2px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block;
+  }
+}

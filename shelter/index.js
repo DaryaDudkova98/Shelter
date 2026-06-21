@@ -247,3 +247,47 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// ===== БУРГЕР-МЕНЮ =====
+const burgerMenu = document.getElementById('burgerMenu');
+const navMenu = document.getElementById('navMenu');
+const overlay = document.getElementById('overlay');
+
+function toggleMenu() {
+    if (burgerMenu) burgerMenu.classList.toggle('active');
+    if (navMenu) navMenu.classList.toggle('active');
+    if (overlay) overlay.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+}
+
+function closeMenu() {
+    if (burgerMenu) burgerMenu.classList.remove('active');
+    if (navMenu) navMenu.classList.remove('active');
+    if (overlay) overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+}
+
+if (burgerMenu) {
+    burgerMenu.addEventListener('click', toggleMenu);
+}
+
+// Закрытие по клику на ссылку
+document.querySelectorAll('.menu ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 320) {
+            closeMenu();
+        }
+    });
+});
+
+// Закрытие по клику на overlay
+if (overlay) {
+    overlay.addEventListener('click', closeMenu);
+}
+
+// Закрытие при изменении размера окна
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 320 && navMenu && navMenu.classList.contains('active')) {
+        closeMenu();
+    }
+});

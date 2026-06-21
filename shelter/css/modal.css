@@ -17,7 +17,7 @@
   transform: translate(-50%, -50%);
   width: 900px;
   height: 500px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 9px;
   animation: modalSlideIn 0.3s ease;
   box-shadow: 0 4px 20px rgba(41, 41, 41, 0.3);
@@ -41,7 +41,7 @@
   width: 52px;
   height: 52px;
   border-radius: 100px;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   background: rgba(41, 41, 41, 0.05);
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@
 }
 
 .modal-close-btn:hover {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   transform: scale(1.05);
 }
 
@@ -146,7 +146,6 @@
   width: 154px;
   height: 102px;
   white-space: nowrap;
-
 }
 
 .modal-info .list-item {
@@ -155,7 +154,7 @@
 }
 
 .modal-info .list-item::marker {
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
 
 .modal-info .list-item h5 {
@@ -180,3 +179,380 @@
   color: #000000;
 }
 
+/* ===== MEDIA QUERY for 768px ===== */
+@media (max-width: 768px) {
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.6);
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 630px !important;
+    height: 350px !important;
+    background-color: #fafafa;
+    border-radius: 9px;
+    animation: modalSlideIn 0.3s ease;
+    box-shadow: 0 4px 20px rgba(41, 41, 41, 0.3);
+    padding: 0;
+    overflow: hidden;
+  }
+
+  @keyframes modalSlideIn {
+    from {
+      transform: translate(-60%, -60%) translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    right: -42px;
+    top: -42px;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #f1cdb3;
+    background: rgba(41, 41, 41, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    padding: 0;
+  }
+
+  .modal-close-btn:hover {
+    background-color: #f1cdb3;
+    transform: scale(1.05);
+  }
+
+  .modal-close-btn img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-body {
+    display: flex;
+    gap: 11px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .modal-img {
+    width: 350px !important;
+    height: 350px !important;
+    border-radius: 9px;
+    object-fit: cover;
+  }
+
+  .modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px 30px 0;
+    box-sizing: border-box;
+  }
+
+  .modal-info h3 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0 0 10px 0;
+  }
+
+  .modal-info h4 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .modal-info h5 strong {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .modal-info h5 span {
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .modal-info .modal-description {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+  }
+
+  .modal-info ul {
+    list-style: disc;
+    padding-left: 10px;
+    margin: 0;
+    width: 100%;
+    max-width: 154px;
+    height: auto;
+    white-space: nowrap;
+  }
+
+  .modal-info .list-item {
+    margin-bottom: 8px;
+    padding: 0;
+  }
+
+  .modal-info .list-item::marker {
+    color: #f1cdb3;
+  }
+
+  .modal-info .list-item h5 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    width: auto;
+  }
+
+  .modal-info .list-item h5 strong {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .modal-info .list-item h5 span {
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .modal.active {
+    display: flex !important;
+  }
+}
+
+/* ===== MEDIA QUERY for 320px ===== */
+@media (max-width: 320px) {
+  .modal {
+    width: 320px;
+    height: auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-window {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 270px !important;
+    height: 393px !important;
+    min-height: 373px !important;
+    max-height: 90vh;
+    background-color: #fafafa;
+    border-radius: 9px;
+    animation: modalSlideInMobile 0.3s ease;
+    box-shadow: 0 4px 20px rgba(41, 41, 41, 0.3);
+    padding: 0;
+    overflow-y: auto;
+    margin: 20px auto;
+  }
+
+  .modal-content {
+    width: 240px !important;
+    height: 341px !important;
+  }
+
+  @keyframes modalSlideInMobile {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    right: -26px;
+    top: -26px;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #f1cdb3;
+    background: rgba(41, 41, 41, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    padding: 0;
+  }
+
+  .modal-close-btn img {
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+  }
+
+  .modal-body {
+    width: 220px !important;
+    height: 321px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+
+  .modal-img {
+    display: none !important;
+  }
+
+  .modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .modal-info h3 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0 36px 10px 36px;
+  }
+
+  .modal-info h4 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0 0 20px 0;
+    padding: 0 34px 0 35px;
+    width: 151px;
+    max-width: 151px;
+    height: 23px;
+    white-space: nowrap;
+  }
+
+  .modal-info .modal-description {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 220px;
+    max-width: 220px;
+    height: 112px;
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .modal-info ul {
+    list-style: disc;
+    padding-left: 10px;
+    margin: 0;
+    width: 154px;
+    height: 87px;
+    white-space: normal;
+  }
+
+  .modal-info .list-item {
+    margin-bottom: 6px;
+    padding: 0;
+  }
+
+  .modal-info .list-item::marker {
+    color: #f1cdb3;
+  }
+
+  .modal-info .list-item h5 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 6%;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    width: auto;
+  }
+
+  .modal-info .list-item h5 strong {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .modal-info .list-item h5 span {
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .modal.active {
+    display: flex !important;
+  }
+}

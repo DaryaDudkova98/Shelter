@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,13 @@
               <p class="subtitle">Shelter for pets in Boston</p>
             </a>
           </div>
-          <nav class="menu">
+          <!-- Burger for mobile version -->
+          <div class="burger-menu" id="burgerMenu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          <nav class="menu" id="navMenu">
             <ul>
               <li><a href="index.html">About the shelter</a></li>
               <li><a href="our-pets.html" class="active">Our pets</a></li>
@@ -114,11 +120,13 @@
           <div class="modal-body">
             <img id="modalImg" class="modal-img" src="" alt="pet" />
             <div class="modal-info">
-              <h3 id="modalName"></h3>
+              <h3 id="modalName">Pet Name</h3>
               <h4 id="modalSubtitle">
                 <strong id="modalType"></strong> - <span id="modalBreed"></span>
               </h4>
-              <h5 class="modal-description" id="modalDescription"></h5>
+              <h5 class="modal-description" id="modalDescription">
+                Pet description will appear here
+              </h5>
               <ul class="modal-details" id="modalDetails">
                 <li class="list-item">
                   <h5><strong>Age:</strong> <span id="modalAge"></span></h5>
@@ -146,6 +154,8 @@
         </div>
       </div>
     </div>
+
+    <div class="overlay" id="overlay"></div>
 
     <script src="our-pets.js"></script>
   </body>
