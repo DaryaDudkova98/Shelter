@@ -18,10 +18,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const cardsPerView = 3;
     let currentIndex = 0;
     
+    function getCardsPerView() {
+        const width = window.innerWidth;
+        if (width <= 320) {
+            return 1; // На 320px показываем 1 карточку
+        } else if (width <= 768) {
+            return 2; // На 768px показываем 2 карточки
+        } else {
+            return 3; // На десктопе показываем 3 карточки
+        }
+    }
+
     function getCardWidthWithGap() {
         const card = cards[0];
-        const gap = 90;
+        if (!card) return 310; // Значение по умолчанию
+        const gap = 40; // Отступ между карточками
         return card.offsetWidth + gap;
+    }
+
+    function getVisibleWidth() {
+        const viewport = document.querySelector('.slider-viewport');
+        if (!viewport) return 890;
+        return viewport.offsetWidth;
     }
     
     function updateSlider() {

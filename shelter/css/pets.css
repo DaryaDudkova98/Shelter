@@ -170,16 +170,17 @@
 
   .pets .container {
     padding: 0 30px !important;
-    height: 877px;
+    height: 697px;
     max-width: 768px;
-    margin: 0 30px;
+    margin:0 30px 0 30px;
     padding: 0 !important;
   }
 
   .pets .pets-content h3 {
     width: 100%;
     max-width: 400px;
-    font-size: 28px;
+    height: 90px;
+    font-size: 35px;
     margin: 0 auto 60px auto;
   }
 
@@ -198,10 +199,18 @@
     padding: 0 64px;
   }
 
+  .slider-viewport {
+    width: 580px;
+    height: 435px;
+    padding: 0;
+  }
+
   .slider-track {
     gap: 40px;
     height: 435px;
+    width: 580px;
   }
+
 
   .controls {
     position: absolute;
@@ -222,10 +231,15 @@
   }
 
   .pets .pets-content .button-primary {
-    margin: 60px auto 0 auto !important;
-    width: 261px;
+    margin: 60px 224px 0 224px !important;
+    width: 260px;
     height: 52px;
+    font-size: 17px !important;
+    font-weight: 400;
+    letter-spacing: 6% !important;
+    line-height: 130% !important;
     display: block;
+    gap: 10px;
   }
 }
 

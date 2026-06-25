@@ -61,6 +61,12 @@
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .hero {
     width: 768px;
   }
@@ -114,6 +120,12 @@
 }
 
 @media (max-width: 320px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .main-container {
     width: 320px !important;
     max-width: 320px !important;

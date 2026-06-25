@@ -72,25 +72,34 @@
 
 /* =====MEDIA QUARY  for 768px ===== */
 @media (max-width: 768px) {
+  .help .container {
+    width: 768px;
+    height: 779px !important;
+    padding: 0 !important;
+  }
+
   .help-content {
     width: 100% !important;
-    max-width: 768px;
-    height: auto !important;
-    padding: 60px 20px 80px 20px !important;
+    max-width: 630px;
+    height: 599px !important;
+    padding: 80px 69px 100px 69px !important;
   }
 
   .help-content h3 {
-    width: 100%;
-    height: auto;
-    padding: 0 0 40px 0 !important;
+    width: 308px;
+    height: 90px;
+    padding: 0 161px 60px 161px !important;
     white-space: normal;
-    font-size: 28px;
+    font-size: 35px;
+    white-space: nowrap;
   }
 
   .help-content-list {
+    width: 630px;
+    height: 449px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px 20px;
+    gap: 55px 60px;
     padding: 0 !important;
     max-width: 100%;
     justify-items: center;
@@ -107,13 +116,14 @@
   }
 
   .help-card h4 {
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    white-space: nowrap;
   }
 
   .help-card img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
   }
 }

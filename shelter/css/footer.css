@@ -115,7 +115,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 115%;
+  line-height: 114.99999999999999%;
   letter-spacing: 0.06em;
   color: #f1cdb3;
   margin-left: 20px;
@@ -142,13 +142,18 @@
 }
 
 @media (max-width: 768px) {
+  .footer .container {
+    padding: 0 !important;
+  }
+
   .footer-content {
-    width: 768px !important;
+    width: 708px !important;
     height: 639px !important;
-    row-gap: 0 !important;
+    row-gap: 65px !important;
     column-gap: 60px;
     flex-wrap: wrap;
     margin: 0 30px 0 30px;
+    padding-top: 30px;
   }
 
   .footer-content .contacts {
@@ -158,11 +163,64 @@
     order: 1;
   }
 
+  .footer-content .contacts h3 {
+    width: 278px;
+    height: 90px !important;
+  }
+
+  .footer-content .contacts .mail {
+    width: 251px !important;
+    height: 32px;
+    margin-right: 27px;
+  }
+
+  .footer-content .contacts .mail img {
+    margin: 5px 0 4px 0;
+  }
+
+  .footer-content .contacts .mail h4 {
+    width: 191px;
+    height: 23px !important;
+    margin: 5px 0 4px 20px;
+  }
+
+  .footer-content .contacts .phone {
+    width: 239px !important;
+    height: 32px;
+    margin-right: 39px;
+  }
+
+  .footer-content .contacts .phone h4{
+    width: 179px;
+    height: 23px !important;
+    margin: 5px 0 4px 20px;
+    white-space: nowrap;
+  }
+
   .footer-content .locations {
     width: 302px;
     height: 234px;
     padding-right: 34px;
     order: 2;
+  }
+
+  .footer-content .locations h3{
+    width: 270px;
+    height: 90px;
+    margin-bottom: 33px !important;
+  }
+
+  .footer-content .locations .boston {
+    margin-bottom: 33px;
+  }
+
+  .footer-content .locations .boston img {
+    margin: 7px 0 7px 0 !important;
+  }
+
+  .footer-content .locations .london h4 {
+    width: 260px;
+    height: 23px;
   }
 
   .footer-content .footer-puppy {
