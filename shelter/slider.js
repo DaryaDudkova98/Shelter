@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPets = [];
     let previousPets = [];
     
-    // Функция для определения количества карточек на экране
     function getCardsPerView() {
         const width = window.innerWidth;
         if (width <= 320) {
@@ -72,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Функция для получения параметров анимации в зависимости от разрешения
     function getAnimationParams() {
         const width = window.innerWidth;
         if (width <= 320) {
@@ -102,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Перемешивание массива
     function shuffleArray(array) {
         const shuffled = [...array];
         for (let i = shuffled.length - 1; i > 0; i--) {
@@ -112,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return shuffled;
     }
     
-    // Получение следующей группы
     function getNextPets(count) {
         if (allPets.length === 0) return [];
         
@@ -128,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return shuffled.slice(0, count);
     }
     
-    // Обновление слайдера
     function updateSlider(direction) {
         if (isAnimating || !petsDataLoaded) {
             console.log('Animation in progress, click IGNORED!');
@@ -141,12 +136,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         isAnimating = true;
-        console.log(' Animation STARTED, clicks DISABLED');
+        console.log('▶️ Animation STARTED, clicks DISABLED');
         
         const animParams = getAnimationParams();
-        console.log('📱 Animation params:', animParams);
+        console.log('Animation params:', animParams);
         
-        // Визуально блокируем кнопки
         prevBtn.style.opacity = '0.5';
         nextBtn.style.opacity = '0.5';
         prevBtn.style.cursor = 'not-allowed';
@@ -182,10 +176,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (btn) {
                         const newBtn = btn.cloneNode(true);
                         btn.parentNode.replaceChild(newBtn, btn);
-                        newBtn.addEventListener('click', function(e) {
-                            e.stopPropagation();
-                            openModal(petName);
-                        });
+                        
+                        // ✅ ИСПОЛЬЗУЕМ ГЛОБАЛЬНУЮ ФУНКЦИЮ ИЗ modal.js
+                        (function(currentPet) {
+                            newBtn.addEventListener('click', function(e) {
+                                e.stopPropagation();
+                                console.log('🖱️ Клик по кнопке для:', currentPet.name);
+                                if (typeof window.openModal === 'function') {
+                                    window.openModal(currentPet);
+                                } else {
+                                    console.error('❌ openModal не определена!');
+                                }
+                            });
+                        })(pet);
                     }
                     
                     card.style.opacity = '0';
@@ -212,11 +215,9 @@ document.addEventListener('DOMContentLoaded', function() {
         void track.offsetHeight;
         track.style.transition = `transform ${animParams.slideTransition}s ease`;
         
-        // Разблокировка после завершения всех анимаций
         const totalTime = delay + animParams.extraTime;
         console.log(`Animation will finish in ${totalTime}ms`);
         
-        // Очищаем предыдущий таймер
         if (animationTimer) {
             clearTimeout(animationTimer);
         }
@@ -234,7 +235,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, totalTime);
     }
     
-    // Инициализация слайдера
     function initSlider() {
         if (!petsDataLoaded || allPets.length === 0) {
             console.log('Данные еще не загружены');
@@ -268,10 +268,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (btn) {
                         const newBtn = btn.cloneNode(true);
                         btn.parentNode.replaceChild(newBtn, btn);
-                        newBtn.addEventListener('click', function(e) {
-                            e.stopPropagation();
-                            openModal(petName);
-                        });
+                        
+                        // ✅ ИСПОЛЬЗУЕМ ГЛОБАЛЬНУЮ ФУНКЦИЮ ИЗ modal.js
+                        (function(currentPet) {
+                            newBtn.addEventListener('click', function(e) {
+                                e.stopPropagation();
+                                console.log('🖱️ Клик по кнопке для:', currentPet.name);
+                                if (typeof window.openModal === 'function') {
+                                    window.openModal(currentPet);
+                                } else {
+                                    console.error('❌ openModal не определена!');
+                                }
+                            });
+                        })(pet);
                     }
                     card.style.display = 'block';
                     card.style.opacity = '1';
@@ -301,7 +310,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Кнопки всегда активны визуально
     prevBtn.disabled = false;
     nextBtn.disabled = false;
     prevBtn.style.opacity = '1';
@@ -309,7 +317,6 @@ document.addEventListener('DOMContentLoaded', function() {
     nextBtn.style.opacity = '1';
     nextBtn.style.cursor = 'pointer';
     
-    // Обновление при изменении размера окна
     let resizeTimeout;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimeout);
@@ -350,57 +357,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }, 300);
-    });
-    
-    // ===== МОДАЛЬНОЕ ОКНО =====
-    const modal = document.getElementById('modal');
-    const modalCloseBtn = document.querySelector('.modal-close-btn');
-    const modalImg = document.getElementById('modalImg');
-    const modalName = document.getElementById('modalName');
-    const modalSubtitle = document.getElementById('modalSubtitle');
-    const modalDescription = document.getElementById('modalDescription');
-    const modalAge = document.getElementById('modalAge');
-    const modalVaccinations = document.getElementById('modalVaccinations');
-    const modalDiseases = document.getElementById('modalDiseases');
-    const modalParasites = document.getElementById('modalParasites');
-    
-    function openModal(petName) {
-        const pet = petsData[petName];
-        if (pet) {
-            modalImg.src = pet.img;
-            modalImg.alt = petName;
-            modalName.textContent = petName;
-            modalSubtitle.textContent = `${pet.type} - ${pet.breed}`;
-            modalDescription.textContent = pet.description;
-            modalAge.textContent = pet.age;
-            modalVaccinations.textContent = pet.Inoculations || 'none';
-            modalDiseases.textContent = pet.Diseases || 'none';
-            modalParasites.textContent = pet.Parasites || 'none';
-            
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-    }
-    
-    function closeModal() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-    
-    if (modalCloseBtn) {
-        modalCloseBtn.addEventListener('click', closeModal);
-    }
-    
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
-    
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && modal.style.display === 'block') {
-            closeModal();
-        }
     });
     
     // ===== ЗАГРУЗКА ДАННЫХ =====
