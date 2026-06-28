@@ -150,6 +150,7 @@
     line-height: 130% !important;
     letter-spacing: 6% !important;
     text-align: center !important;
+    vertical-align: middle;
     color: #ffffff !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -161,6 +162,7 @@
     font-size: 15px !important;
     line-height: 160% !important;
     text-align: center !important;
+    vertical-align: middle;
     color: #cdcdcd !important;
     margin-top: 42px !important;
     padding: 0 !important;
@@ -170,7 +172,7 @@
     width: 207px !important;
     height: 52px !important;
     padding: 15px 45px !important;
-    margin: 42px auto 0 auto !important;
+    margin: 42px 47px 0 46px !important;
     font-size: 17px !important;
     line-height: 130% !important;
     letter-spacing: 6% !important;
@@ -200,6 +202,7 @@
     height: 271.77px !important;
     padding: 0 !important;
     margin-top: 105px !important;
+    margin-left: 40px !important;
     position: relative;
     top: 0;
     left: 0;

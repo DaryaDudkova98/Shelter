@@ -137,14 +137,15 @@
 
   .help .container {
     padding: 0 15px !important;
+    width: 290px !important;
+    height: 661px !important;
   }
 
   .help-content {
-    width: 320px !important;
-    max-width: 320px;
+    width: 290px !important;
     height: 661px !important;
-    margin: 42px 0 42px 0 !important;
-    padding: 0 !important;
+    margin: 0 !important;
+    padding: 42px 0 !important;
     position: relative;
     top: 0;
     left: 0;
@@ -244,17 +245,17 @@
   }
 
   .help-card h4 {
-    font-size: 12px !important;
-    line-height: 110%;
-    margin-top: 15px !important;
-    letter-spacing: 4%;
+    font-size: 15px !important;
+    line-height: 110.00000000000001%;
+    margin-top: 20px !important;
+    letter-spacing: 6%;
     white-space: nowrap;
     text-align: center;
   }
 
   .help-card img {
-    width: 40px !important;
-    height: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
     object-fit: contain;
   }
 }
