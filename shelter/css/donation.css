@@ -120,7 +120,8 @@
 
   .donation .container {
     width: 310px !important;
-    height: 458.2px !important;
+    height: 542.2px !important;
+    margin: 0 !important;
   }
 
   .donation-content {
@@ -143,23 +144,24 @@
 
   .donation-content .content h3 {
     width: 300px !important;
-    height: auto !important;
+    height: 64px !important;
     font-size: 25px !important;
     line-height: 130% !important;
     letter-spacing: 6% !important;
     text-align: center !important;
+    vertical-align: middle !important;
     margin-bottom: 20px !important;
   }
 
   .donation-content .content h5 {
     width: 273px !important;
-    height: auto !important;
+    height: 24px !important;
     font-size: 15px !important;
-    line-height: 110% !important;
+    line-height: 160% !important;
     letter-spacing: 0% !important;
     text-align: center !important;
     white-space: nowrap !important;
-    margin-top: 20px !important;
+    margin-top: 0 !important;
     padding-left: 13px;
     padding-right: 14px;
   }
@@ -184,7 +186,7 @@
   .credit-card .credit-card-content {
     max-width: 300px !important;
     max-height: 43px !important;
-    gap: 10px !important;
+    gap: 15px !important;
     padding: 0 !important;
     margin: 0 auto !important;
   }
@@ -192,16 +194,17 @@
   .credit-card .credit-card-content img {
     width: 30px !important;
     height: 23px !important;
-    padding: 10px 0 10px 10px !important;
+    padding: 10px 0 10px 15px !important;
   }
 
   .credit-card .credit-card-content a {
-    width: 100% !important;
-    height: auto !important;
-    font-size: 16px !important;
-    line-height: 115% !important;
+    width: 206px !important;
+    height: 17px !important;
+    font-size: 15px !important;
+    line-height: 110.00000000000001% !important;
     letter-spacing: 6% !important;
-    padding: 10px 10px 10px 0 !important;
+    vertical-align: middle;
+    padding: 13px 15px 13px 0 !important;
     white-space: normal !important;
     word-break: break-all !important;
   }

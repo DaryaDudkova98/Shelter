@@ -7,7 +7,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(41, 41, 41, 0.6);
-  overflow: auto;
+  overflow: hidden;
 }
 
 .modal-window {
@@ -78,7 +78,7 @@
 .modal-img {
   width: 500px;
   height: 500px;
-  border-radius: 9px;
+  border-radius: 9px 0 0 9px;
   object-fit: cover;
 }
 
@@ -190,7 +190,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(41, 41, 41, 0.6);
-    overflow: auto;
+    overflow: hidden !important;
     align-items: center;
     justify-content: center;
   }
@@ -207,7 +207,7 @@
     animation: modalSlideIn 0.3s ease;
     box-shadow: 0 4px 20px rgba(41, 41, 41, 0.3);
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
   }
 
   @keyframes modalSlideIn {
@@ -223,8 +223,8 @@
 
   .modal-close-btn {
     position: absolute;
-    right: -42px;
-    top: -42px;
+    right: -45px;
+    top: -55px;
     width: 52px;
     height: 52px;
     border-radius: 100px;
@@ -257,7 +257,7 @@
 
   .modal-body {
     display: flex;
-    gap: 11px;
+    gap: 0 !important;
     height: 100%;
     box-sizing: border-box;
     padding: 0;
@@ -266,7 +266,7 @@
   .modal-img {
     width: 350px !important;
     height: 350px !important;
-    border-radius: 9px;
+    border-radius: 9px 0 0 9px !important;
     object-fit: cover;
   }
 
@@ -274,9 +274,10 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 30px 20px 30px 0;
+    width: 260px;
+    height: 303px;
+    padding: 0 !important;
+    margin: 10px 9px 37px 11px;
     box-sizing: border-box;
   }
 
@@ -294,7 +295,7 @@
     font-family: Georgia;
     font-weight: 400;
     font-size: 20px;
-    line-height: 115%;
+    line-height: 114.99999999999999%;
     letter-spacing: 6%;
     color: #000000;
     margin: 0 0 20px 0;
@@ -302,6 +303,7 @@
     width: auto;
     max-width: 100%;
     height: auto;
+    white-space: nowrap;
   }
 
   .modal-info h5 strong {
@@ -315,10 +317,12 @@
   }
 
   .modal-info .modal-description {
+    width: 260px;
+    height: 98px;
     font-family: Georgia;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 110%;
+    font-size: 13px;
+    line-height: 110.00000000000001%;
     letter-spacing: 6%;
     color: #000000;
     margin: 0 0 20px 0;
@@ -326,6 +330,11 @@
     width: 100%;
     max-width: 260px;
     height: auto;
+  }
+
+  .modal-info .modal-details {
+    width: 154px;
+    height: 87px;
   }
 
   .modal-info ul {
@@ -339,7 +348,7 @@
   }
 
   .modal-info .list-item {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     padding: 0;
   }
 
@@ -377,30 +386,29 @@
 /* ===== MEDIA QUERY for 320px ===== */
 @media (max-width: 320px) {
   .modal {
-    width: 320px;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 0;
     box-sizing: border-box;
     display: none;
     align-items: center;
     justify-content: center;
+    overflow: hidden !important;
   }
 
   .modal-window {
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
+    top: 25%;
+    left: 13%;
     transform: none;
-    width: 270px !important;
-    height: 393px !important;
-    min-height: 373px !important;
-    max-height: 90vh;
+    width: 240px !important;
+    height: 341px !important;
     background-color: #fafafa;
     border-radius: 9px;
     animation: modalSlideInMobile 0.3s ease;
     box-shadow: 0 4px 20px rgba(41, 41, 41, 0.3);
     padding: 0;
-    overflow-y: auto;
+    overflow: visible;
     margin: 20px auto;
   }
 
@@ -422,8 +430,9 @@
 
   .modal-close-btn {
     position: absolute;
-    right: -26px;
-    top: -26px;
+    right: -29px;
+    top: -51px;
+    overflow: visible;
     width: 52px;
     height: 52px;
     border-radius: 100px;
@@ -466,6 +475,7 @@
     width: 100%;
     height: 100%;
     padding: 0;
+    margin: 0 !important;
     box-sizing: border-box;
   }
 
@@ -476,7 +486,7 @@
     line-height: 130%;
     letter-spacing: 6%;
     color: #000000;
-    margin: 0 36px 10px 36px;
+    margin: 0 39px 10px 36px;
   }
 
   .modal-info h4 {
@@ -487,11 +497,9 @@
     letter-spacing: 6%;
     color: #000000;
     margin: 0 0 20px 0;
-    padding: 0 34px 0 35px;
-    width: 151px;
-    max-width: 151px;
+    text-align: center !important;
+    width: 100%;
     height: 23px;
-    white-space: nowrap;
   }
 
   .modal-info .modal-description {
@@ -501,7 +509,7 @@
     line-height: 110.00000000000001%;
     letter-spacing: 6%;
     color: #000000;
-    margin: 0 0 20px 0;
+    margin: 0 0 24px 0;
     padding: 0;
     width: 220px;
     max-width: 220px;
@@ -514,15 +522,16 @@
 
   .modal-info ul {
     list-style: disc;
-    padding-left: 10px;
+    list-style-position: outside;
+    padding-left: 17px;
     margin: 0;
-    width: 154px;
+    width: 164px !important;
     height: 87px;
     white-space: normal;
   }
 
   .modal-info .list-item {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     padding: 0;
   }
 
@@ -533,13 +542,15 @@
   .modal-info .list-item h5 {
     font-family: Georgia;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 110.00000000000001%;
     letter-spacing: 6%;
     color: #000000;
     margin: 0;
     padding: 0;
     display: inline;
     width: auto;
+    white-space: nowrap;
   }
 
   .modal-info .list-item h5 strong {
