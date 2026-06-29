@@ -286,7 +286,8 @@ html.no-scroll {
   .header {
     margin: 0 20px !important;
     padding-top: 30px !important;
-    width: 280px !important;
+    max-width: 280px !important;
+    width: 100% !important;
     height: 60px !important;
     position: relative;
   }
@@ -424,5 +425,43 @@ html.no-scroll {
   .header-light .menu ul li a.active {
     border-bottom: 3px solid #f1cdb3 !important;
     color: #292929 !important;
+  }
+}
+
+/* ===== FIX FOR LIGHT THEME CENTERING ===== */
+.header-light {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  height: 90px !important;
+  padding-top: 30px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+  .header-light {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-light {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .header-light .logo {
+    width: 184px !important;
+    flex-shrink: 0 !important;
   }
 }
