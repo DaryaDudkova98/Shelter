@@ -1,3 +1,3 @@
 # Shelter
 
-`#FFFFFF`
+`#000000`
