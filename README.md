@@ -2,4 +2,4 @@
 
 - text
   + text
-  * text
+     * text
